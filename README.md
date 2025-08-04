@@ -34,10 +34,9 @@ You can test the pipeline by typing:
 
 This will run it with default parameters and a test samplesheet and dataset that is included in the repository. If this runs without any issues you can run it in your own dataset.
 ### Running the pipeline with your own dataset
-To run the pipeline with your own dataset, there are a few steps to take.
+To run the pipeline with your own dataset, there are possible adjustments to take.
 
-1. Make a samplesheet. You will first need to create a `samplesheet`. An example samplesheet is located inside the repository `/assets/samplesheet.csv` and should be a comma separated file that consists of the following columns: `sample,fastq,barcode,condition` and each row should contain one sample.
-2. Adjust `nextflow.config`.  There are some default parameters used and specified in the configuration file and, depending on your most common usecase, it is advisable to change some of these defaults.
+1. Adjust `nextflow.config`.  There are some default parameters used and specified in the configuration file and, depending on your most common usecase, it is advisable to change some of these defaults.
    * Check `max_memory` and `max_cpus`. It is important that these do not go above your system values.
    * Go over other parameters defined within the `params { }` section in the config file and change whatever you feel fit.  
 
